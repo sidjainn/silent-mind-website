@@ -3,76 +3,306 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Silent Mind — Home</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <title>Ek-ai — a chief of staff that never lets things slip</title>
+  <meta name="description" content="Ek-ai is a private AI chief of staff for founders. It reads across your WhatsApp, email and calendar, remembers every promise, and hands you one short brief every morning — so nothing important slips." />
+  <meta property="og:title" content="Ek-ai — nothing slips" />
+  <meta property="og:description" content="A private AI chief of staff for founders. Reads where you already work, remembers every promise, briefs you every morning. It drafts — you send." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/ekai.css" />
 </head>
 <body>
-  <div class="container">
-    <header class="site-header">
-      <div class="brand">Silent Mind</div>
-      <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="join.html">Join</a>
-      </nav>
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Ek-ai home">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <span>Ek-ai</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#how">How it works</a>
+      <a href="#different">Why it's different</a>
+      <a href="#trust">Privacy</a>
+      <a href="#about">Team</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-right">
+      <a class="btn btn-small" href="#pilot">Get a pilot seat</a>
       <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">🌓</button>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section class="hero card">
-        <div class="hero-copy">
-          <h1>Why Silent Mind?</h1>
-          <p>Because there is continuous chatter. The mind gets dispersed because of readily available digital distractions. This makes deep rest and creativity suffer, slowly at first, and over time creates a degenerative cycle of negative emotions and poor mental health, often physical also. It may be experienced as dullness, poor energy, lack of clarity, and disinterest.</p>
-          <a class="cta" href="join.html">Express interest</a>
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Your private chief of staff</p>
+        <h1>Nothing<br/>slips.</h1>
+        <p class="lede">You run your business across forty chats, a full inbox and a calendar that fights you. Ek-ai watches all of it, remembers every promise made <em>to</em> you and <em>by</em> you, and hands you one short brief every morning — the three things that matter, the money that's stuck, the people waiting on you.</p>
+        <p class="sub">It drafts. You send. Always.</p>
+        <div class="hero-cta">
+          <a class="btn btn-lg" href="#pilot">Get a pilot seat</a>
+          <a class="btn btn-ghost btn-lg" href="#how">See how it works</a>
         </div>
-        <div class="hero-media">
-          <img src="assets/hero.gif" alt="animated visual of illuminated brain over calm ocean at sunrise" />
+        <p class="micro">A few partner seats. We set it up with you, personally.</p>
+      </div>
+
+      <!-- Mock morning brief (product, not illustration) -->
+      <aside class="brief" aria-label="Example morning brief">
+        <div class="brief-head">
+          <span class="brief-dot"></span>
+          <span class="brief-title">Morning Brief</span>
+          <span class="brief-date">Tue, 7 Jul</span>
         </div>
-      </section>
-
-      <section class="card mt">
-        <h3>What is Silent Mind</h3>
-        <p>Silent mind is the cultivation of centeredness, improved reception (transistor analogy), and being at rest even while being in action. It needs conscious effort at first but can slowly become a state. It is experienced as in the form of better energy levels, lightness, harmony, and more frequent moments of inspiration.</p>
-      </section>
-
-      <section class="card mt">
-        <h3>Why do it in a group</h3>
-        <p>People coming together has something magical to it. The common intentionality amplifies the journey for all individuals. Groups provide the opportunity to share experiences while pursuing a similar goal. This creates connection, provides support, and integrates new insights.
-        </p>
-      </section>
-      <section class="card mt">
-          <h3>Why am I interested</h3>
-          <p>I lived in Auroville for 5 years and got to experience the power of small communities very closely. I was part of a self-discovery program for young adults that had some very powerful elements - especially sharing circles that brought people closer. This was 5 years ago, now it’s coming back in my life in an interesting way.            
-            <ul>
-                <li>I am seeking a more intentional community around me</li>
-              <li>I have an urge to provide something meaningful for others</li>
-              <li>It is a helpful way for me to be at practices I otherwise find challenging to follow on my own</li>
-            </ul>
-            That being said, it is mostly the power of the tools, facilitation is not such a huge part and can be easily replicated.
-        </p>
-      </section>
-
-      <section class="card mt">
-        <h3>What did we do last time?</h3>
-        <p>We did a check-in, a short guided meditation to slow down the mental activity, 
-            <br><br>
-            journaling with the idea to witness and stream thoughts and emotions, while being in a relatively centred state.
-            <br><br>
-            After, we did a sharing circle - having to articulate something that's alive helps people feel lighter, in some cases see the thing more clearly, feel heard, supported, and connected. It can also initiate a healthy conversation. The commonality of challenges & experiences makes one feel less isolated in their journey. It's a great way to regulate emotion and perspective!
-            <br><br>
-            Doing the next one on similar lines, put in your details on the link if you are interested. You can also express interest for future gatherings.            
-      </p>
-      <a class="cta" href="join.html">Express interest</a>
-
+        <div class="brief-body">
+          <p class="brief-section">🎯 Today's three</p>
+          <ol class="brief-list">
+            <li>Send Deepshri the revised proposal — she's waited 2 days.</li>
+            <li>Chase the Inja invoice — <strong>₹62,000</strong>, 11 days overdue.</li>
+            <li>GST (GSTR-3B) due in 5 days — confirm with your CA.</li>
+          </ol>
+          <p class="brief-section">💬 Waiting on you</p>
+          <div class="brief-row">
+            <span>Ravi (supplier) — "kal pakka bhej dunga" · 3 days ago</span>
+          </div>
+          <div class="brief-row">
+            <span>Kinisi lead — went quiet after your demo</span>
+          </div>
+          <div class="brief-actions">
+            <span class="chip chip-done">✅ I did this</span>
+            <span class="chip chip-mute">🔕 Not a priority</span>
+          </div>
+        </div>
+      </aside>
     </section>
 
-    </main>
+    <!-- PROBLEM -->
+    <section class="band">
+      <div class="wrap narrow">
+        <h2 class="section-title">You're not short on effort.<br/>You're short on a system.</h2>
+        <p class="body-lg">Most founders "use AI" by opening a chat window and typing. That's a tool you have to remember to pick up — one more tab in a day that's already on fire. So the promise made in a late-night group chat, the lead that went cold after lunch, the payment someone swore was coming — they don't fail because you're careless. They fail because nothing wrote them down.</p>
+        <p class="body-lg accented">What you don't pay for in money, you pay for in time. Ek-ai is built to hand that time back.</p>
+      </div>
+    </section>
 
-    <footer class="mt">
-      <div class="card">/sid</div>
-    </footer>
-  </div>
+    <!-- HOW IT WORKS -->
+    <section class="band alt" id="how">
+      <div class="wrap">
+        <p class="eyebrow center">How it works</p>
+        <h2 class="section-title center">Observe. Remember. Brief. Draft.</h2>
+        <div class="steps">
+          <div class="step">
+            <span class="step-num">01</span>
+            <h3>Observe</h3>
+            <p>It reads across the places your business actually happens — WhatsApp, Gmail, your calendar. Quietly, on your side.</p>
+          </div>
+          <div class="step">
+            <span class="step-num">02</span>
+            <h3>Remember</h3>
+            <p>Every commitment, payment promise and open thread lands in a memory that keeps your goals and priorities in view — and forgets nothing.</p>
+          </div>
+          <div class="step">
+            <span class="step-num">03</span>
+            <h3>Brief</h3>
+            <p>One short email, waiting when you wake up: today's three priorities, money outstanding, who's waiting, calendar traps. Two taps to say "done" or "not now" — it learns.</p>
+          </div>
+          <div class="step">
+            <span class="step-num">04</span>
+            <h3>Draft</h3>
+            <p>When something needs a reply, it writes one in your voice. You read it and press send. Nothing ever leaves in your name without you.</p>
+          </div>
+        </div>
+        <p class="foot-note center">Plus a Friday punch list to close the week, and a Sunday check-in that keeps its memory sharp.</p>
+      </div>
+    </section>
 
-  <script src="js/app.js"></script>
+    <!-- WHY DIFFERENT -->
+    <section class="band" id="different">
+      <div class="wrap">
+        <p class="eyebrow center">Why it's different</p>
+        <h2 class="section-title center">AI as a system — not a chat box.</h2>
+        <div class="pillars">
+          <div class="pillar">
+            <div class="pillar-ic">↗</div>
+            <h3>Proactive</h3>
+            <p>You don't go to it. It comes to you, in the tools you already live in — before you have to remember to ask.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-ic">◎</div>
+            <h3>Real memory</h3>
+            <p>A living memory of your north star and shifting priorities, drawn from your real conversations — pruned as things change so it stays sharp, not bloated.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-ic">⛓</div>
+            <h3>Plugged into your work</h3>
+            <p>It connects to where the work is. Reading your WhatsApp — where most Indian business really happens — is one example of how far that reach goes.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-ic">✎</div>
+            <h3>You stay in control</h3>
+            <p>It observes and drafts. It never sends as you. The judgment calls stay yours; the remembering and the busywork don't.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- A DAY WITH EK-AI -->
+    <section class="band alt">
+      <div class="wrap narrow">
+        <p class="eyebrow center">A day with Ek-ai</p>
+        <div class="day">
+          <div class="day-row"><span class="day-time">5:47</span><p>You open your phone. One email: three priorities, ₹62,000 outstanding across two clients, a lead waiting two days, GST due in five.</p></div>
+          <div class="day-row"><span class="day-time">5:49</span><p>Tap ✅ on the call you already made from the car yesterday. Tap 🔕 on a conference invite. Neither nags you again.</p></div>
+          <div class="day-row"><span class="day-time">9:30</span><p>"Draft a friendly follow-up to the Kinisi lead." Thirty seconds later it's in your voice. You change one word and send.</p></div>
+          <div class="day-row"><span class="day-time">Sun</span><p>A ten-minute check-in. What moved, what's gone stale, what to let go. Your chief of staff stays sharp because you tune it in plain language.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST -->
+    <section class="band" id="trust">
+      <div class="wrap">
+        <p class="eyebrow center">Privacy &amp; control</p>
+        <h2 class="section-title center">Built to be trusted with the personal stuff.</h2>
+        <div class="trust-grid">
+          <div class="trust-card">
+            <h3>It drafts — never sends</h3>
+            <p>Anything outbound is a draft handed to you. Nothing leaves in your name without your thumb on the button.</p>
+          </div>
+          <div class="trust-card">
+            <h3>Read-only where it counts</h3>
+            <p>On WhatsApp it can read, but it cannot send — not "won't," <em>can't</em>. Sending is switched off at the system level, even if you ask.</p>
+          </div>
+          <div class="trust-card">
+            <h3>Your memory is yours</h3>
+            <p>Everything it remembers lives in plain files you can open, edit and take with you. No lock-in, ever.</p>
+          </div>
+          <div class="trust-card">
+            <h3>A private vault</h3>
+            <p>A gated notes file it never reads on its own and never quotes — opened only when you ask for it by name.</p>
+          </div>
+        </div>
+        <div class="honest">
+          <p class="honest-title">And honestly — what it doesn't do yet:</p>
+          <ul>
+            <li>It reads text, not WhatsApp voice notes, images or attachments.</li>
+            <li>It watches one inbox, not several stitched together.</li>
+            <li>It works on the one computer it's set up on.</li>
+          </ul>
+          <p class="honest-note">We'd rather tell you the edges up front than oversell you a demo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO -->
+    <section class="band alt">
+      <div class="wrap narrow">
+        <h2 class="section-title center">Who it's for</h2>
+        <p class="body-lg center">Founders and operators still doing their own sales, follow-ups, collections and coordination — the ones for whom a dropped thread is a lost deal or a delayed payment. If you already have a full ops team and a CRM you actually keep updated, you don't need us yet. If your business lives in your head and your chats, you do.</p>
+      </div>
+    </section>
+
+    <!-- PILOT / SIGNUP -->
+    <section class="band pilot" id="pilot">
+      <div class="wrap narrow center">
+        <p class="eyebrow center">The pilot</p>
+        <h2 class="section-title center">A few seats. Onboarded slowly, on purpose.</h2>
+        <p class="body-lg center">We're taking on a small group of founders as design partners — free, for now. We set everything up with you and stay close while you use it. In return, we ask for your honest reactions.</p>
+        <a class="btn btn-lg" href="mailto:sid@silent-mind.com?subject=Ek-ai%20pilot%20%E2%80%94%20I%27m%20interested&amp;body=Hi%2C%20I%27d%20like%20a%20pilot%20seat.%20My%20WhatsApp%20number%3A%20">Apply for a pilot seat →</a>
+        <p class="micro center">Share your email and WhatsApp number — we'll take it from there.</p>
+        <p class="whatyoulln">What you'll need: a computer that stays awake during the day, and an AI-assistant subscription — we'll help you sort the details.</p>
+      </div>
+    </section>
+
+    <!-- NAME / THE FEELING -->
+    <section class="band name-band">
+      <div class="wrap narrow center">
+        <p class="eyebrow center">What the name means</p>
+        <p class="name-line">Ek-ai is short for <strong>Ekagra-AI</strong>.</p>
+        <p class="name-sub"><em>Ekāgra</em> — single-pointed focus. That's the feeling we're building for: clear, unhurried, pointed at the one thing that matters. Not more noise, more notifications, more tabs. Less — but the <em>right</em> less.</p>
+      </div>
+    </section>
+
+    <!-- STORY + TEAM -->
+    <section class="band alt" id="about">
+      <div class="wrap narrow">
+        <p class="eyebrow center">How it started</p>
+        <h2 class="section-title center">Two friends, one spark.</h2>
+        <p class="body-lg center">We met at <strong>BITS</strong>, went our separate ways, and crossed paths again earlier this year after a long time. The spark was immediate — we wanted to build something together, and we were both pulled by the same thing: this rare moment when AI is diffusing into everything. So here we are, early on the journey, building Ek-ai and looking for early believers to help us sharpen it.</p>
+
+        <figure class="quote">
+          <blockquote>The progressive mind is seen at its noblest when it strives to elevate the whole race to its own level — whether by sowing broadcast the image of its own thought and fulfilment, or by changing the material life of the race into fresh forms intended to represent more nearly that ideal of truth, beauty, justice, righteousness with which the man's own soul is illumined. Failure in such a field matters little; for the mere attempt is dynamic and creative.</blockquote>
+          <figcaption>— Sri Aurobindo</figcaption>
+        </figure>
+        <p class="body-lg center">That last line is why we build. <em>The mere attempt is dynamic and creative.</em></p>
+
+        <div class="team">
+          <figure class="team-photo">
+            <img src="assets/team.jpg" alt="Siddharth Jain and Aditya Vyas, co-founders of AI-for-India" onerror="this.closest('.team-photo').classList.add('noimg')" />
+            <figcaption>
+              <span class="team-names">Siddharth Jain &amp; Aditya Vyas</span>
+              <span class="team-role">Co-founders, AI-for-India · friends from BITS</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <p class="center"><a class="btn btn-lg" href="#pilot">Be an early believer →</a></p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="band alt" id="faq">
+      <div class="wrap narrow">
+        <h2 class="section-title center">Questions worth asking</h2>
+        <div class="faq">
+          <details>
+            <summary>Does it send messages or emails as me?</summary>
+            <p>No. When something needs to go out, it writes a draft and hands it to you. You send it yourself — you stay in the loop on everything that leaves in your name.</p>
+          </details>
+          <details>
+            <summary>Can it reply for me on WhatsApp?</summary>
+            <p>No — WhatsApp is read-only. It reads your chats to track what matters, but sending is switched off at the system level, even if you ask. Want a reply? Ask it to draft one; you send.</p>
+          </details>
+          <details>
+            <summary>Where does my data live?</summary>
+            <p>What it reads stays on your machine and isn't used to train anything. The one exception is the brief email it composes, which is handed to a delivery service so it can reach your inbox — that's just how email works. Everything it remembers stays in files you own.</p>
+          </details>
+          <details>
+            <summary>Do I need to be technical?</summary>
+            <p>No. Setup is guided and we do the technical parts with you. You'll only handle the human steps — signing in to your accounts, approving a permission, scanning a WhatsApp QR code.</p>
+          </details>
+          <details>
+            <summary>What do I need to run it?</summary>
+            <p>A computer that stays awake during your day and a subscription to an AI assistant (Claude or Codex). We'll help you get set up during onboarding.</p>
+          </details>
+          <details>
+            <summary>What if I stop?</summary>
+            <p>You keep everything. Your memory lives in plain files you can open in any editor and take anywhere. Nothing is locked to us.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-in">
+      <div class="footer-brand">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Ek-ai</span>
+        <span class="footer-by">by AI-for-India</span>
+      </div>
+      <div class="footer-links">
+        <a href="#how">How it works</a>
+        <a href="#trust">Privacy</a>
+        <a href="#faq">FAQ</a>
+        <a href="mailto:sid@silent-mind.com">Contact</a>
+      </div>
+    </div>
+    <p class="footer-fine">Ekāgra — single-pointed focus.</p>
+  </footer>
+
+  <script src="js/ekai.js"></script>
 </body>
 </html>

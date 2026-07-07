@@ -1,4 +1,4 @@
-// Ek-ai site — theme toggle + placeholder-link guard.
+// Ek-ai site - theme toggle + placeholder-link guard.
 window.addEventListener('DOMContentLoaded', () => {
   const root = document.documentElement;
   const toggle = document.getElementById('themeToggle');
@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-placeholder="true"]').forEach(el => {
     el.addEventListener('click', e => {
       e.preventDefault();
-      el.textContent = el.classList.contains('btn') ? 'Form link coming soon' : 'Contact — coming soon';
+      el.textContent = el.classList.contains('btn') ? 'Form link coming soon' : 'Contact - coming soon';
       el.style.opacity = '0.7';
     });
   });

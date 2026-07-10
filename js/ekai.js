@@ -2,7 +2,7 @@
 window.addEventListener('DOMContentLoaded', () => {
   const root = document.documentElement;
   const toggle = document.getElementById('themeToggle');
-  const KEY = 'ekaiTheme';
+  const KEY = 'ekaiTheme2';
 
   function apply(theme){
     root.setAttribute('data-theme', theme === 'dark' ? 'dark' : 'light');

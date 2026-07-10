@@ -96,6 +96,11 @@ em{font-style:italic}
 .sub{font-size:19px;font-weight:600;color:var(--ink);margin:0 0 30px}
 .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:16px}
 .micro{font-size:13.5px;color:var(--ink-soft);margin:0}
+.hero-for{
+  margin:26px 0 0;padding-top:18px;border-top:1px solid var(--line);
+  font-size:14.5px;color:var(--ink-soft);max-width:36em;line-height:1.55;
+}
+.hero-for strong{color:var(--ink)}
 
 /* mock brief card */
 .brief{
@@ -131,10 +136,15 @@ em{font-style:italic}
 .body-lg.center{max-width:40em;margin-left:auto;margin-right:auto}
 .body-lg.accented{color:var(--ink);font-weight:500}
 .body-lg strong{color:var(--ink)}
-.foot-note{color:var(--ink-soft);font-size:15px;margin-top:34px}
+.foot-note{color:var(--ink);font-size:17.5px;margin-top:38px}
 
 /* steps */
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:44px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+.steps-label{
+  text-align:center;margin:46px 0 0;
+  text-transform:uppercase;letter-spacing:0.16em;font-size:12.5px;font-weight:600;
+  color:var(--accent-ink);
+}
 .step{
   background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
   padding:26px 22px;box-shadow:var(--shadow-sm);
@@ -161,6 +171,10 @@ em{font-style:italic}
 .day-row p{margin:0;font-size:16.5px;color:var(--ink)}
 
 /* trust */
+.trust-kick{
+  font-family:Fraunces,Georgia,serif;font-size:clamp(19px,2.6vw,24px);line-height:1.45;
+  text-align:center;color:var(--ink);max-width:30em;margin:6px auto 0;
+}
 .trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:42px}
 .trust-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow-sm)}
 .trust-card h3{font-size:19px;margin:0 0 8px}
@@ -230,7 +244,7 @@ em{font-style:italic}
 @media (max-width:900px){
   .hero{grid-template-columns:1fr;gap:40px;padding:52px 24px 60px}
   .brief{max-width:440px}
-  .steps{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:1fr}
   .pillars{grid-template-columns:repeat(2,1fr);gap:30px}
   .nav-links{display:none}
 }

@@ -17,9 +17,10 @@
   <meta name="twitter:description" content="Out of 100s of to-dos a business juggles, Ek-ai keeps track of it all and emails you one morning brief: the 3 things that matter." />
   <meta name="twitter:image" content="https://silent-mind.com/assets/og-image.png" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <meta name="theme-color" content="#faf6ed" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/ekai.css" />
 </head>
 <body>
@@ -45,9 +46,11 @@
 
     <!-- HERO -->
     <section class="hero">
+      <div class="hero-rings" aria-hidden="true"></div>
       <div class="hero-copy">
-        <h1>100s of to-dos for your business,<br/><span class="h1-soft">which 3 matter?</span></h1>
-        <p class="lede">The missed inquiry on WhatsApp, overdue invoices, payment follow-ups, emails to respond, long-term business goals. Ek-ai (short for Ekagra ai) keeps track of it all and every morning hands you an email brief: the 3 things that matter most for that day.
+        <p class="eyebrow hero-eyebrow">Ekāgra — focus for your business</p>
+        <h1>100s of to-dos for your business,<br/><em class="h1-em">which 3 matter?</em></h1>
+        <p class="lede">The missed inquiry on WhatsApp, overdue invoices, payment follow-ups, emails to respond, long-term business goals. Ek-ai (short for Ekagra ai) keeps track of it all & every morning sends you an email brief: the 3 things that matter most for the day.
         </p>
         <div class="hero-cta">
           <a class="btn btn-lg" href="https://forms.gle/mhWhk1wqHXaNJp9cA" target="_blank" rel="noopener">Request early access</a>
@@ -88,16 +91,17 @@
     <section class="band alt" id="qa">
       <div class="wrap">
 
+        <!-- <p class="eyebrow center"><span class="eyebrow-num"></span>The idea</p> -->
         <h2 class="section-title center">What is Ek-ai? <span class="h1-soft">(Ekāgra AI)</span></h2>
         <p class="body-md center">Not another app to learn. Runs on your <strong>Claude</strong> or <strong>ChatGPT</strong> subscription.</p>
 
         <div class="qa">
 
           <!-- Q1 PROBLEM: things keep getting missed -->
-          <article class="qa-row">
+          <article class="qa-row" data-reveal>
             <div class="qa-text">
               <span class="qa-tag">Problem</span>
-              <h3 class="qa-q">Missing important things, getting buried by recent</h3>
+              <h3 class="qa-q">Missing important things, getting buried by recent?</h3>
               <p class="qa-a">Recent over important: because new things keep coming up all the time, the long-term important things get missed. </p>
               <p class="qa-a">Business opportunities lost to scattered threads across email, to-dos and WhatsApp chats.</p>
 
@@ -115,7 +119,7 @@
           </article>
 
           <!-- Q2 OPPORTUNITY: AI can be a system, not just chats -->
-          <article class="qa-row reverse qa-wide">
+          <article class="qa-row reverse qa-wide" data-reveal>
             <div class="qa-text">
               <span class="qa-tag">Opportunity</span>
               <h3 class="qa-q">AI can do more than just chats - a smart assistant.</h3>
@@ -179,7 +183,7 @@
           </article>
 
           <!-- Q3 WHO (merged): who it's for + why it fits -->
-          <article class="qa-row">
+          <article class="qa-row" data-reveal>
             <div class="qa-text">
               <h3 class="qa-q">Who is it for?</h3>
             </div>
@@ -208,7 +212,7 @@
           </article>
 
           <!-- Q4 SECURITY -->
-          <article class="qa-row reverse">
+          <article class="qa-row reverse" data-reveal>
             <div class="qa-text">
               <span class="qa-tag">Security</span>
               <h3 class="qa-q">Data does not leave your computer.</h3>
@@ -227,7 +231,7 @@
           </article>
 
           <!-- Q5 FEELING / NAME -->
-          <article class="qa-row qa-feel">
+          <article class="qa-row qa-feel" data-reveal>
             <div class="qa-text">
               <span class="qa-tag">Vibe</span>
               <h3 class="qa-q">Why call it Ek-ai?</h3>
@@ -250,20 +254,21 @@
     <!-- HOW IT WORKS  (system + how) -->
     <section class="band" id="how">
       <div class="wrap">
+        <!-- <p class="eyebrow center"><span class="eyebrow-num"></span>How it works</p> -->
         <h2 class="section-title center">How it works?</h2>
 
         <div class="steps">
-          <div class="step">
+          <div class="step" data-reveal>
             <span class="step-num">01</span>
             <h3>Onboard</h3>
             <p>Ek-ai learns about your business, its goals and the people you work with, connects your tools, and sets up your morning brief. A guided one-time setup, roughly 1 to 2 hours.</p>
           </div>
-          <div class="step">
+          <div class="step" data-reveal>
             <span class="step-num">02</span>
             <h3>Observe</h3>
             <p>It reads where your business actually happens: WhatsApp, Gmail, your calendar, and more as you connect them. Quietly, on your side.</p>
           </div>
-          <div class="step">
+          <div class="step" data-reveal>
             <span class="step-num">03</span>
             <h3>Remember <span class="live-badge"><span class="live-ic">↻</span> always live</span></h3>
             <p>Every commitment, promise and open thread lands in a living memory that never stops refreshing. As the day moves, so does what Ek-ai knows, and what it decides matters most.</p>
@@ -272,7 +277,7 @@
 
         <!-- daily + weekly cadence -->
         <div class="cadence">
-          <div class="cadence-item">
+          <div class="cadence-item" data-reveal>
             <p class="eyebrow">Every morning</p>
             <h3 class="cadence-title cadence-cmd">/morning-brief</h3>
             <div class="moment-rail" aria-hidden="true">
@@ -280,17 +285,17 @@
               <div class="moment-step is-brief"><span>9:05</span> Your brief lands in your inbox</div>
             </div>
           </div>
-          <div class="cadence-item">
+          <div class="cadence-item" data-reveal>
             <p class="eyebrow">Once a week</p>
-            <h3 class="cadence-title cadence-cmd">/weekly-check-in</h3>
+            <h3 class="cadence-title cadence-cmd">/weekly-checkin</h3>
             <p class="cadence-copy">Just like checking in with an assistant: set new priorities, think out loud on a knotty problem, unblock what's stuck at work. A short weekly sync keeps Ek-ai current as things change.</p>
           </div>
-          <div class="cadence-item">
+          <div class="cadence-item" data-reveal>
             <p class="eyebrow">Use when you need</p>
             <h3 class="cadence-title cadence-cmd">/think-out-loud</h3>
             <p class="cadence-copy">A decision, a hard call, a plan for the week, a product idea. Since it already knows your business, you skip the recap and just think through the hairy problems.</p>
           </div>
-          <div class="cadence-item">
+          <div class="cadence-item" data-reveal>
             <p class="eyebrow">Use when you need</p>
             <h3 class="cadence-title cadence-cmd">/draft</h3>
             <p class="cadence-copy">Writing in your style: email responses, WhatsApp messages, company documents, and more.</p>
@@ -302,22 +307,23 @@
     <!-- TRUST / PRIVACY -->
     <section class="band alt" id="trust">
       <div class="wrap">
+        <!-- <p class="eyebrow center"><span class="eyebrow-num"></span>Privacy</p> -->
         <h2 class="section-title center">Built to be trusted with the personal stuff.</h2>
         <p class="trust-kick">Not more noise, not more notifications, not more tabs.<br/>Less, but the <em>right</em> less. Clear, unhurried, pointed at your priorities.</p>
         <div class="trust-grid">
-          <div class="trust-card">
+          <div class="trust-card" data-reveal>
             <h3>Your memory is yours</h3>
             <p>Everything Ek-ai remembers lives in plain files, on your device, that you own. Not a database we control. Not training data. Yours, forever.</p>
           </div>
-          <div class="trust-card">
+          <div class="trust-card" data-reveal>
             <h3>It drafts. It can't send.</h3>
             <p>When something needs to go out, Ek-ai writes the draft and hands it to you. It can't send on WhatsApp, can't send an email, can't post anywhere. The send tools are switched off at the system level.</p>
           </div>
-          <div class="trust-card">
+          <div class="trust-card" data-reveal>
             <h3>What actually leaves your device</h3>
             <p>What Ek-ai reads, your messages, mail and notes, stays on your device. It isn't uploaded and isn't used to train anything. One exception: your morning brief is emailed to you, and email has to pass through a delivery service to reach your inbox.</p>
           </div>
-          <div class="trust-card">
+          <div class="trust-card" data-reveal>
             <h3>What it can't do yet</h3>
             <ul class="trust-list">
               <li>Cannot read WhatsApp voice notes, images or attachments.</li>
@@ -332,6 +338,7 @@
     <!-- PILOT / SIGNUP  (single CTA, after privacy) -->
     <section class="band cta2" id="pilot">
       <div class="wrap narrow center">
+        <!-- <p class="eyebrow center"><span class="eyebrow-num"></span>Pilot</p> -->
         <h2 class="section-title center">Free pilot with a few early users.</h2>
         <p class="trust-kick">1-1 setup. Just help us make it better?</p>
 
@@ -344,8 +351,9 @@
     <!-- FAQ -->
     <section class="band alt" id="faq">
       <div class="wrap narrow">
+        <!-- <p class="eyebrow center"><span class="eyebrow-num"></span>FAQ</p> -->
         <h2 class="section-title center">Questions worth asking</h2>
-        <div class="faq">
+        <div class="faq" data-reveal>
           <details>
             <summary>Does it send messages or emails as me?</summary>
             <p>No, it can't. When something needs to go out, it writes a draft and hands it to you. You send it yourself, so you stay in the loop on everything that leaves in your name.</p>
@@ -381,17 +389,17 @@
     <!-- STORY + TEAM -->
     <section class="band" id="about">
       <div class="wrap narrow">
-        <p class="eyebrow center">About us</p>
+        <!-- <p class="eyebrow center"><span class="eyebrow-num"></span>About us</p> -->
         <h2 class="section-title center">Friends from BITS.</h2>
         <p class="body-lg center">Siddharth has spent about a decade building software and AI products, most recently as a founding PM. Aditya has spent years building and running a pharma business. We wanted to build something meaningful, and started with a problem we kept seeing up close: while AI has advanced a lot, most people still use it mostly to chat. Ek-ai is our attempt at something more useful. We're early, and we'd like a few business operators to try it and help shape it.</p>
 
         <p class="body-lg center">A line we keep coming back to:</p>
-        <figure class="quote">
+        <figure class="quote" data-reveal>
           <blockquote>The progressive mind is seen at its noblest when it strives to elevate the whole race to its own level - whether by sowing broadcast the image of its own thought and fulfilment, or by changing the material life of the race into fresh forms intended to represent more nearly that ideal of truth, beauty, justice, righteousness with which the man's own soul is illumined. Failure in such a field matters little; for the mere attempt is dynamic and creative.</blockquote>
           <figcaption>Sri Aurobindo</figcaption>
         </figure>
 
-        <div class="team">
+        <div class="team" data-reveal>
           <figure class="team-photo">
             <img src="assets/team.jpg" alt="Siddharth Jain and Aditya Vyas" onerror="this.closest('.team-photo').classList.add('noimg')" />
             <figcaption>
@@ -420,7 +428,7 @@
         <a href="mailto:sid@silent-mind.com">Contact</a>
       </div>
     </div>
-    <p class="footer-fine">Ekāgra: single-pointed focus.</p>
+    <p class="footer-fine"><span class="footer-deva">एकाग्र</span> Ekāgra: single-pointed focus.</p>
   </footer>
 
   <script src="js/ekai.js"></script>

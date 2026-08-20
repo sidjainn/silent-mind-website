@@ -491,22 +491,20 @@ em{font-style:italic}
 .quote figcaption::before{content:"— "}
 
 /* ---------- TEAM ---------- */
-.team{margin:48px auto 34px;max-width:540px}
-.team-photo{
-  margin:0;background:var(--surface);border:1px solid var(--line);border-radius:16px;
-  padding:12px 12px 6px;box-shadow:var(--shadow);rotate:-0.6deg;
-  transition:rotate .35s ease,box-shadow .35s ease;
+.team{margin:44px auto 34px;display:flex;justify-content:center;gap:46px}
+.team-photo{margin:0;display:flex;flex-direction:column;align-items:center;gap:12px}
+.team-photo img{
+  width:128px;height:128px;border-radius:50%;object-fit:cover;display:block;
+  border:1px solid var(--line);box-shadow:var(--shadow-sm);
+  transition:transform .35s ease;
 }
-.team-photo:hover{rotate:0deg}
-.team-photo img{width:100%;height:auto;display:block;border-radius:9px}
-.team-photo figcaption{margin:14px 0 10px;text-align:center;display:flex;flex-direction:column;gap:3px}
-.team-names{font-family:var(--serif);font-size:20px;font-weight:600}
+.team-photo:hover img{transform:scale(1.04)}
+.team-photo figcaption{text-align:center;display:flex;flex-direction:column;gap:3px}
+.team-names{font-family:var(--serif);font-size:17px;font-weight:600}
 .team-photo.noimg img{display:none}
 .team-photo.noimg::before{
-  content:"Team photo → add assets/team.jpg";
-  display:flex;align-items:center;justify-content:center;text-align:center;
-  aspect-ratio:4/3;border-radius:9px;border:1px dashed var(--line);
-  background:var(--accent-soft);color:var(--accent-ink);font-size:15px;font-weight:500;padding:20px;
+  content:"";width:128px;height:128px;border-radius:50%;
+  border:1px dashed var(--line);background:var(--accent-soft);
 }
 
 /* ---------- FOOTER ---------- */
@@ -546,6 +544,8 @@ em{font-style:italic}
 @keyframes flow-v{0%{top:0;opacity:0}12%{opacity:1}88%{opacity:1}100%{top:100%;opacity:0}}
 @media (max-width:560px){
   .band{padding:64px 0}
+  .team{gap:32px}
+  .team-photo img{width:104px;height:104px}
   .trust-grid{grid-template-columns:1fr}
   .nav{padding:12px 18px}
   .btn-small{display:none}
